@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.inputArea {
+  display: grid;
+  place-items: center;
+  outline: 1px solid black;
+  grid-template-columns: repeat(4, 100px);
+  grid-template-rows: minmax(120px, auto) repeat(5, 100px);
+}
+
+.displayArea {
+  /* grid-column: 1 / -1; */
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 2rem;
+  word-wrap: break-word;
+  word-break: break-all;
+  background: rgba(18, 18, 18, 0.27);
+  /* border-radius: 16px; */
+  /* box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(4.3px);
+  -webkit-backdrop-filter: blur(4.3px);
+  border: 1px solid rgba(18, 18, 18, 0.41); */
+  outline: 1px solid black;
+}
